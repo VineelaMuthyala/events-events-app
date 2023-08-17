@@ -1,0 +1,54 @@
+.reg-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-family: 'Roboto';
+}
+.yet-to-register-image {
+  width: 70%;
+}
+.yet-to-register-text {
+  color: #475569;
+  font-size: 18px;
+  align-items: center;
+  width: 70%;
+}
+.btn {
+  width: 70%;
+  height: 40px;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: #0967d2;
+  border: 0px;
+  margin-top: 10px;
+}
+.registered-image {
+  width: 20%;
+}
+.registered-text {
+  font-size: 18px;
+  font-weight: bold;
+  width: 70%;
+  color: black;
+}
+.registration-closed-image {
+  width: 70%;
+}
+.registration-closed-heading {
+  font-size: 20px;
+  font-weight: bold;
+  width: 70%;
+  color: black;
+
+  text-align: center;
+}
+.registration-closed-text {
+  color: #475569;
+  font-size: 18px;
+  align-items: center;
+  width: 70%;
+  text-align: center;
+}

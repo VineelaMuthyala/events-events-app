@@ -1,0 +1,25 @@
+.events-container {
+  display: flex;
+  flex-direction: row;
+}
+ul {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.events-unordered-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: #475569;
+  color: white;
+  font-family: 'Roboto';
+  padding: 10px;
+}
+.events-heading {
+  font-size: 25px;
+  margin-left: 30px;
+}
