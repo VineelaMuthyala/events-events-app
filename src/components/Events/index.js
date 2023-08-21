@@ -54,16 +54,16 @@ const eventsList = [
 ]
 
 class Events extends Component {
-  state = {list: eventsList, filteredList: []}
+  state = {list: eventsList, filteredList: [], imageSelectedId: ''}
 
   imageSelected = id => {
     const {list} = this.state
     const filteredListDetails = list.filter(eachItem => eachItem.id === id)
-    this.setState({filteredList: filteredListDetails})
+    this.setState({filteredList: filteredListDetails, imageSelectedId: id})
   }
 
   render() {
-    const {list, filteredList} = this.state
+    const {list, filteredList, imageSelectedId} = this.state
 
     return (
       <div className="events-container">
@@ -75,6 +75,7 @@ class Events extends Component {
                 key={eachItem.id}
                 event={eachItem}
                 imageSelected={this.imageSelected}
+                isSelected={eachItem.id === imageSelectedId}
               />
             ))}
           </ul>
